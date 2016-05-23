@@ -10,11 +10,32 @@
   </head>
   <body>
 <section id="home">
+<id="homePage">
+<ul>
+  <li><a class="smoothscroll" href="#title">Home</a></li>
+  <li><a href="#about" class="smoothscroll">About</a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn" onclick="myFunction()">Games<img src="screenshot.png" width="10" height="10"></a>
+    <div class="dropdown-content" id="myDropdown">
+      <a href="#games" class="smoothscroll">Agar.io</a>
+      <a href="#games" class="smoothscroll">Slither.io</a>
+      <a href="#games" class="smoothscroll">Wings.io</a>
+      <a href="#games" class="smoothscroll">Diep.io</a>
+      <a href="#games" class="smoothscroll">Vertix.io</a>
+      <a href="#games" class="smoothscroll">TankiOnline</a>
+  <li><a class="smoothscroll" href="#contact">Contact</a></li> 
+  <li><a class="smoothscroll" href="#license">License</a></li>
+    </div>
+  </li>
+</ul>
 <div id="title">
     <h1><center>RipOff Games.</center></h1>
 </div>
 </section>
   </body>
+  <id="about">
+    <h3>About</h3>
+  </id>
 <style>
 @font-face {
    font-family: Heartjungle;
@@ -90,6 +111,15 @@ li.dropdown {
     font-family: "Open Sans", sans-serif;
 }
 .show {display:block;}
-
+#about{
+  background-color: blue;
+  color: white;
+}
+#about h3{
+  font-family: 'Anson', sans-serif;
+  font-size: 24px;
+  margin: 0;
+  padding-bottom: 2px;
+}
 </style>
 </html>
