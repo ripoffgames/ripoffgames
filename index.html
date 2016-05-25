@@ -50,7 +50,133 @@
   
   <!-- Contact section -->
   <section id="contact">
-  	<div class='form_description'>
+  	<body>
+<style type='text/css'>
+
+body{
+    margin-left: 18px;
+    margin-top: 18px;
+}
+
+body{
+    font-family : Verdana, Arial, Helvetica, sans-serif;
+    font-size : 13px;
+    color : #474747;
+    background-color: transparent;
+}
+
+select, option{
+    font-size:13px;
+}
+
+ol.phpfmg_form{
+    list-style-type:none;
+    padding:0px;
+    margin:0px;
+}
+
+ol.phpfmg_form input, ol.phpfmg_form textarea, ol.phpfmg_form select{
+    border: 1px solid #ccc;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+}
+
+ol.phpfmg_form li{
+    margin-bottom:5px;
+    clear:both;
+    display:block;
+    overflow:hidden;
+	width: 100%
+}
+
+
+.form_field, .form_required{
+    font-weight : bold;
+}
+
+.form_required{
+    color:red;
+    margin-right:8px;
+}
+
+.field_block_over{
+}
+
+.form_submit_block{
+    padding-top: 3px;
+}
+
+.text_box,.text_select {
+    height: 32px;
+}
+
+.text_box, .text_area, .text_select {
+    min-width:160px;
+    max-width:300px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.text_area{
+    height:80px;
+}
+
+.form_error_title{
+    font-weight: bold;
+    color: red;
+}
+
+.form_error{
+    background-color: #F4F6E5;
+    border: 1px dashed #ff0000;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.form_error_highlight{
+    background-color: #F4F6E5;
+    border-bottom: 1px dashed #ff0000;
+}
+
+div.instruction_error{
+    color: red;
+    font-weight:bold;
+}
+
+hr.sectionbreak{
+    height:1px;
+    color: #ccc;
+}
+
+#one_entry_msg{
+    background-color: #F4F6E5;
+    border: 1px dashed #ff0000;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+
+#frmFormMailContainer input[type="submit"]{
+    padding: 10px 25px; 
+    font-weight: bold;
+    margin-bottom: 10px;
+    background-color: #FAFBFC;
+}
+
+#frmFormMailContainer input[type="submit"]:hover{
+    background-color: #E4F0F8;
+}
+
+    
+
+
+
+</style>
+
+
+
+<div class='form_description'>
 
 </div>
 
@@ -79,19 +205,11 @@
 </li>
 
 <li class='field_block' id='field_1_div'><div class='col_label'>
-	<label class='form_field'>Email</label> <label class='form_required' >*</label> </div>
+	<label class='form_field'>Stuff You Want to Add</label> <label class='form_required' >*</label> </div>
 	<div class='col_field'>
-	<input type="text" name="field_1"  id="field_1" value="" class='text_box'>
+	<textarea name="field_1" id="field_1" rows=4 cols=25 class='text_area'></textarea>
+
 	<div id='field_1_tip' class='instruction'></div>
-	</div>
-</li>
-
-<li class='field_block' id='field_2_div'><div class='col_label'>
-	<label class='form_field'>Message</label> <label class='form_required' >*</label> </div>
-	<div class='col_field'>
-	<textarea name="field_2" id="field_2" rows=4 cols=25 class='text_area'></textarea>
-
-	<div id='field_2_tip' class='instruction'></div>
 	</div>
 </li>
 
@@ -514,7 +632,8 @@ function PHPFMG( formID ){
             has_entry( fields );
         };
 
-       // reset errors
+
+/*        // reset errors
         $('#err_required').hide();
         $( '.form_error_highlight' ).removeClass('form_error_highlight');
 
@@ -584,6 +703,7 @@ function toggleOtherInputBox( name, type, id ){
 
 var fmgHandler = new PHPFMG();
 fmgHandler.init();
+/*
 // Sep 2013, add ajax submit support with jQuery
 $('#frmFormMail').submit( function(event){
     event.preventDefault();
@@ -620,6 +740,19 @@ $('#frmFormMail').submit( function(event){
 
 
 </script>
+
+<div class='form_footer'>
+
+</div>
+
+	<br><br>
+
+	<div style="padding-left:10px; font-size:11px;color:#cccccc;text-decoration:none;">
+		:: <a href="http://phpfmg.sourceforge.net" target="_blank" title="Free Mailform Maker: Create read-to-use Web Forms in a flash" style="color:#cccccc;text-decoration:none;font-weight:bold;">PHP FormMail Generator</a> ::
+	</div>
+
+ </body>
+
   </section>
 <style>
 ul {
