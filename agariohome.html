@@ -9,7 +9,11 @@
 <ul>
   <li><a href="index.html">Back Home</a></li>
   <li><a class="smoothscroll" href="#about">About Agar.io</a></li>
-  <li><a class="smoothscroll" href="#mods">Mods</a></li>
+  <li class="dropdown">
+    <a href="#" class="dropbtn">Mods<img src="screenshot.png" width="10" height="10"></a>
+    <div class="dropdown-content">
+      <a href="#chromeMods" class="smoothscroll">Chrome</a>
+      <a href="#  ">Firefox</a>
   <li><a href="agario.html">Advance to Agar.io</a></li>
   <li class="dropdown">
     <a href="#" class="dropbtn">Games <img src="screenshot.png" width="10" height="10"></a>
@@ -38,10 +42,16 @@
   </section>
   
   <section id="mods">
-    <h1>Agar.io Mods</h1>
-    <h2><u>For Google Chrome Users</u></h2>
-    <h3>Step 1: Install Tampermonkey</h3>
-    <p>Visit the TamperMonkey homepage and add the chrome extension <a href="tampermonkey.net">here</a>.</p>
+    <center><h1>Agar.io Mods</h1></center>
+    
+    <section id="chromeMods">  
+      <h2><u>For Google Chrome Users</u></h2>
+      <h3>Step 1: Install Tampermonkey</h3>
+      <p>Visit the TamperMonkey homepage and add the chrome extension <a href="tampermonkey.net">here</a>.</p>
+      <h3>Step 2: Install the Agario Mods Chrome Extension</h3>
+      <p>Visit the Agario Mods homepage and download the chrome extension <a href="agariomods.com">here</a>.</p>
+    </section>
+  
   </section>
   
   </body>
@@ -163,8 +173,24 @@ li.dropdown {
   font-size: 16px;
   color: white;
 }
-#mods{
-  
+#mods h1{
+  font-family: 'Anson', sans-serif;
+  text-align: center;
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+  color: #00ffff;
 }
+#chromeMods a{
+  text-decoration: none;
+  color: #00ffff;
+  font-family: Comic Sans MS;
+}
+#chromeMods a,visited{
+  text-decoration: none;
+  color: #00ffff;
+  font-family: Comic Sans MS;
+}
+#chromeMods
   </style>
 </html>
