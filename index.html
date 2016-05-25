@@ -49,7 +49,14 @@
   
   <!-- Contact section -->
   <section id="contact">
-    <!--Please add css -->
+  	<div class='form_description'>
+
+</div>
+
+
+
+
+
 
 <div id='frmFormMailContainer'>
 
@@ -85,13 +92,6 @@
 
 	<div id='field_2_tip' class='instruction'></div>
 	</div>
-</li>
-
-
-<li class='field_block' id='phpfmg_captcha_div'>
-	<div class='col_label'></div><div class='col_field'>
-	<script src='//www.google.com/recaptcha/api.js?hl=en'></script>
-         <div class='g-recaptcha col_field' data-theme='light' data-sitekey='6LcQuv8SAAAAAKSvNHfF5gQuW9WIpcualeEYllCn'></div>	</div>
 </li>
 
 
@@ -513,8 +513,7 @@ function PHPFMG( formID ){
             has_entry( fields );
         };
 
-
-/*        // reset errors
+       // reset errors
         $('#err_required').hide();
         $( '.form_error_highlight' ).removeClass('form_error_highlight');
 
@@ -584,7 +583,6 @@ function toggleOtherInputBox( name, type, id ){
 
 var fmgHandler = new PHPFMG();
 fmgHandler.init();
-/*
 // Sep 2013, add ajax submit support with jQuery
 $('#frmFormMail').submit( function(event){
     event.preventDefault();
@@ -621,7 +619,7 @@ $('#frmFormMail').submit( function(event){
 
 
 </script>
-</section>
+  </section>
 <style>
 ul {
     list-style-type: none;
