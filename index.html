@@ -955,5 +955,42 @@ li.dropdown {
   color: white;
   font-family: 'Open Sans', sans-serif;
 }
+#page {
+    display: none;
+}
+#loading {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(192, 192, 192, 0.5);
+    background-image: url("http://i.imgur.com/QGUsD3a.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+}
 </style>
+<script>
+	function onReady(callback) {
+    var intervalID = window.setInterval(checkReady, 1000);
+
+    function checkReady() {
+        if (document.getElementsByTagName('body')[0] !== undefined) {
+            window.clearInterval(intervalID);
+            callback.call(this);
+        }
+    }
+}
+
+function show(id, value) {
+    document.getElementById(id).style.display = value ? 'block' : 'none';
+}
+
+onReady(function () {
+    show('page', true);
+    show('loading', false);
+});
+</script>
 </html>
