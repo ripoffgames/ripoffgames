@@ -111,12 +111,12 @@ function googleTranslateElementInit() {
   
   <!-- About section -->
 <center>
-  <id="about">
+  <section id="about">
     <h3><b>Welcome to RipOff Games</b></h3>
     <p>Here, you will find totally modded versions of your favorite games. Believe me... it's fun.</p>
     <p>Unfortunately, you will have to add an extension to access the mods. You will find the links </p>
     <p>and descriptions on each page. However, we are working on mods witout these extentions.</p>
-  </id>
+  </section>
 </center>
   
   <!-- Contact section -->
@@ -1015,24 +1015,9 @@ nav {
 
 </style>
 <script>
-	function onReady(callback) {
-    var intervalID = window.setInterval(checkReady, 1000);
-
-    function checkReady() {
-        if (document.getElementsByTagName('body')[0] !== undefined) {
-            window.clearInterval(intervalID);
-            callback.call(this);
-        }
-    }
-}
-
-function show(id, value) {
-    document.getElementById(id).style.display = value ? 'block' : 'none';
-}
-
-onReady(function () {
-    show('page', true);
-    show('loading', false);
-});
+  $(document).ready(function(){
+    // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+    $('.modal-trigger').leanModal();
+  });
 </script>
 </html>
