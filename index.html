@@ -998,7 +998,7 @@ li.dropdown {
 }
 </style>
 <script>
-function onReady(callback) {
+	function onReady(callback) {
     var intervalID = window.setInterval(checkReady, 1000);
 
     function checkReady() {
@@ -1014,6 +1014,8 @@ function show(id, value) {
 }
 
 onReady(function () {
-    show('pa
+    show('page', true);
+    show('loading', false);
+});
 </script>
 </html>
