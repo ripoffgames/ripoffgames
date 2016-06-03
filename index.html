@@ -203,110 +203,6 @@ body{
 select, option{
     font-size:13px;
 }
-
-ol.phpfmg_form{
-    list-style-type:none;
-    padding:0px;
-    margin:0px;
-}
-
-ol.phpfmg_form input, ol.phpfmg_form textarea, ol.phpfmg_form select{
-    border: 1px solid #ccc;
-    -moz-border-radius: 3px;
-    -webkit-border-radius: 3px;
-    border-radius: 3px;
-}
-
-ol.phpfmg_form li{
-    margin-bottom:5px;
-    clear:both;
-    display:block;
-    overflow:hidden;
-	width: 100%
-}
-
-
-.form_field, .form_required{
-    font-weight : bold;
-}
-
-.form_required{
-    color:red;
-    margin-right:8px;
-}
-
-.field_block_over{
-}
-
-.form_submit_block{
-    padding-top: 3px;
-}
-
-.text_box,.text_select {
-    height: 32px;
-}
-
-.text_box, .text_area, .text_select {
-    min-width:160px;
-    max-width:300px;
-    width: 100%;
-    margin-bottom: 10px;
-}
-
-.text_area{
-    height:80px;
-}
-
-.form_error_title{
-    font-weight: bold;
-    color: red;
-}
-
-.form_error{
-    background-color: #F4F6E5;
-    border: 1px dashed #ff0000;
-    padding: 10px;
-    margin-bottom: 10px;
-}
-
-.form_error_highlight{
-    background-color: #F4F6E5;
-    border-bottom: 1px dashed #ff0000;
-}
-
-div.instruction_error{
-    color: red;
-    font-weight:bold;
-}
-
-hr.sectionbreak{
-    height:1px;
-    color: #ccc;
-}
-
-#one_entry_msg{
-    background-color: #F4F6E5;
-    border: 1px dashed #ff0000;
-    padding: 10px;
-    margin-bottom: 10px;
-}
-
-
-#frmFormMailContainer input[type="submit"]{
-    padding: 10px 25px; 
-    font-weight: bold;
-    margin-bottom: 10px;
-    background-color: #FAFBFC;
-}
-
-#frmFormMailContainer input[type="submit"]:hover{
-    background-color: #E4F0F8;
-}
-
-    
-
-
-
 </style>
 
 
@@ -330,44 +226,30 @@ hr.sectionbreak{
 
             
 <ol class='phpfmg_form' >
-
-<li class='field_block' id='field_0_div'><div class='col_label'>
-	<label class='form_field'>Name</label> <label class='form_required' >*</label> </div>
-	<div class='col_field'>
-	<input type="text" name="field_0"  id="field_0" value="" class='text_box'>
-	<div id='field_0_tip' class='instruction'></div>
-	</div>
-</li>
-
-<li class='field_block' id='field_1_div'><div class='col_label'>
-	<label class='form_field'>Stuff You Want to Add</label> <label class='form_required' >*</label> </div>
-	<div class='col_field'>
-	<textarea name="field_1" id="field_1" rows=4 cols=25 class='text_area'></textarea>
-
-	<div id='field_1_tip' class='instruction'></div>
-	</div>
-</li>
-
-
-            <li>
-            <div class='col_label'>&nbsp;</div>
-            <div class='form_submit_block col_field'>
-	
-
-                <input type='submit' value='Submit' class='form_button'>
-
-				<div id='err_required' class="form_error" style='display:none;'>
-				    <label class='form_error_title'>Please check the required fields</label>
-				</div>
-				
-
-
-                <span id='phpfmg_processing' style='display:none;'>
-                    <img id='phpfmg_processing_gif' src='admin.php?mod=image&amp;func=processing' border=0 alt='Processing...'> <label id='phpfmg_processing_dots'></label>
-                </span>
-            </div>
-            </li>
-
+	  <div class="row">
+    <form class="col s12">
+      <div class="row">
+        <div class="input-field col s6">
+          <i class="material-icons prefix">account_circle</i>
+          <input id="icon_prefix" type="text" class="validate">
+          <label for="icon_prefix">First Name</label>
+        </div>
+        <div class="input-field col s6">
+          <i class="material-icons prefix">message</i>
+          <input id="icon_telephone" type="tel" class="validate">
+          <label for="icon_messgae">Message</label>
+        </div>
+       <div class="input-field col s6">
+          <i class="material-icons">star_rate</i>
+              <p class="range-field">
+      <input type="range" id="test5" min="0" max="100" />
+    </p>
+          <label for="icon_star_rate">Message</label>
+        </div>
+      </div>
+    </form>
+  </div>
+        
 </ol>
 </form>
 
@@ -382,14 +264,6 @@ hr.sectionbreak{
 Your request has been sent to a moderator and will be reviewed.
 <center>Thank You!</center>
 </div>
-
-
-            
-
-
-
-
-
 
 <script type="text/javascript">
  /**
