@@ -144,46 +144,65 @@
   	<h3>Contact</h3>
   	<p>If you would like to see any other modded games on here, fill out the form below.</p>
     </center>
-<div id='frmFormMailContainer'>
+    
+<div class="container">
+    <div class="section">
+    			<section id="contact">
+	          		<h4>Contact</h4>
+			</section>
 
-<form name="frmFormMail" id="frmFormMail" target="submitToFrame" action='admin.php' method='post' enctype='multipart/form-data' onsubmit='return fmgHandler.onSubmit(this);'>
+			<div class="row">
+				  <form class="col s12">
+					<div class="row">
 
-            
-<ol class='phpfmg_form' >
-	  <div class="row">
-    <form class="col s12">
-      <div class="row">
-        <div class="input-field col s6">
-          <i class="material-icons prefix">account_circle</i>
-          <input id="icon_prefix" type="text" class="validate">
-          <label for="icon_prefix">First Name</label>
-        </div>
-        <div class="input-field col s6">
-          <i class="material-icons prefix">message</i>
-          <input id="icon_telephone" type="tel" class="validate">
-          <label for="icon_messgae">Message</label>
-        </div>
-       <div class="input-field col s6">
-              <p class="range-field">
-          <i class="material-icons">star_rate</i>
-      <input type="range" id="test5" min="1" max="5" />
-       <label for="icon_star_rate">Please give us a rating</label>
-    </p>
-        </div>
-      </div>
-        <button class="btn waves-effect waves-light" type="submit" name="action">Submit
-    <i class="material-icons">send</i>
-  </button>
-    </form>
-  </div>
-        
-</ol>
-</form>
+					  <div class="input-field col s6">
+							<i class="material-icons prefix">account_circle</i>
+						<input id="name"  data-error="Your name isn't that long!" type="text" class="validate" length="14">
+						<label for="name">Name</label>
+					  </div>
 
-<iframe name="submitToFrame" id="submitToFrame" src="javascript:false" style="position:absolute;top:-10000px;left:-10000px;" /></iframe>
+					<div class="input-field col s6">
+						<i class="material-icons prefix">subject</i>
+							<input id="subject" data-error="Your subject is too long!" type="text" class="validate" length="32" value="RipOff Games Contact">
+						<label for="subject">Subject</label>
+					</div>
 
 </div>
-<!-- end of form container -->
+					<div class="row">
+						<div class="input-field col s12">
+								<i class="material-icons prefix">email</i>
+							  <input id="email" type="email" class="validate">
+							  <label for="email" data-error="That's not an email!">Email</label>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="input-field col s12">
+							 <i class="material-icons prefix">message</i>
+							  <textarea id="message" class="materialize-textarea" length="477" data-error="Your Messgage is too long."></textarea>
+								  <label for="message">Message</label>
+						</div>
+					</div>
+					
+                       <div class="row">
+						<div class="input-field col s12">
+					       	 <i class="material-icons">star_half</i>
+					       	     <p class="range-field">
+      <input type="range" id="test5" min="1" max="5" />
+    </p>
+						</div>
+					</div>
+					
+					</div>
+					   <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+							<i class="material-icons right">send</i>
+					   </button>
+				</form>
+</div>
+
+    </div>
+  </div>
+  
   </section>
 <style type='text/css'>
 #about{
