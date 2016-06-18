@@ -74,7 +74,7 @@
     </style>
 </div>
 <!--Non Page Content End-->
-<div style="display:none;" id="myDiv" class="expandOpen">
+<div style="display:none;" id="myDiv" class="slideExpandUp">
 <!--Menu bar-->
 <ul id="dropdown1" class="dropdown-content">
   <li><a href="agariohome.html">Agar.io</a></li>
@@ -204,53 +204,77 @@
   
   </section>
 <style type='text/css'>
-.expandOpen{
-	animation-name: expandOpen;
-	-webkit-animation-name: expandOpen;	
+.slideExpandUp{
+	animation-name: slideExpandUp;
+	-webkit-animation-name: slideExpandUp;	
 
-	animation-duration: 1.2s;	
-	-webkit-animation-duration: 1.2s;
+	animation-duration: 1.6s;	
+	-webkit-animation-duration: 1.6s;
 
 	animation-timing-function: ease-out;	
-	-webkit-animation-timing-function: ease-out;	
+	-webkit-animation-timing-function: ease -out;
 
 	visibility: visible !important;	
 }
 
-@keyframes expandOpen {
+@keyframes slideExpandUp {
 	0% {
-		transform: scale(1.8);		
+		transform: translateY(100%) scaleX(0.5);
 	}
-	50% {
-		transform: scale(0.95);
+	30%{
+		transform: translateY(-8%) scaleX(0.5);
 	}	
-	80% {
-		transform: scale(1.05);
+	40%{
+		transform: translateY(2%) scaleX(0.5);
+	}
+	50%{
+		transform: translateY(0%) scaleX(1.1);
+	}
+	60%{
+		transform: translateY(0%) scaleX(0.9);		
+	}
+	70% {
+		transform: translateY(0%) scaleX(1.05);
+	}			
+	80%{
+		transform: translateY(0%) scaleX(0.95);		
 	}
 	90% {
-		transform: scale(0.98);
+		transform: translateY(0%) scaleX(1.02);
 	}	
-	100% {
-		transform: scale(1);
-	}			
+	100%{
+		transform: translateY(0%) scaleX(1);		
+	}
 }
 
-@-webkit-keyframes expandOpen {
+@-webkit-keyframes slideExpandUp {
 	0% {
-		-webkit-transform: scale(1.8);		
+		-webkit-transform: translateY(100%) scaleX(0.5);
 	}
-	50% {
-		-webkit-transform: scale(0.95);
+	30%{
+		-webkit-transform: translateY(-8%) scaleX(0.5);
 	}	
-	80% {
-		-webkit-transform: scale(1.05);
+	40%{
+		-webkit-transform: translateY(2%) scaleX(0.5);
+	}
+	50%{
+		-webkit-transform: translateY(0%) scaleX(1.1);
+	}
+	60%{
+		-webkit-transform: translateY(0%) scaleX(0.9);		
+	}
+	70% {
+		-webkit-transform: translateY(0%) scaleX(1.05);
+	}			
+	80%{
+		-webkit-transform: translateY(0%) scaleX(0.95);		
 	}
 	90% {
-		-webkit-transform: scale(0.98);
+		-webkit-transform: translateY(0%) scaleX(1.02);
 	}	
-	100% {
-		-webkit-transform: scale(1);
-	}					
+	100%{
+		-webkit-transform: translateY(0%) scaleX(1);		
+	}
 }
 #about{
 	padding-bottom: 280px;
