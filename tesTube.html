@@ -28,13 +28,34 @@
                   <i class="material-icons">menu</i>
                 </a>
                 <ul>
-                  <li><a href="index.html" class="btn-floating red"><i class="material-icons">fullscreen</i></a></li>
+                  <li><a value="click to toggle fullscreen" onclick="toggleFullScreen()" class="btn-floating red"><i class="material-icons">fullscreen</i></a></li>
                   <li><a href="index.html" class="btn-floating yellow darken-1"><i class="material-icons">people</i></a></li>
                   <li><a href="index.html" class="btn-floating green"><i class="material-icons">search</i></a></li>
                   <li><a href="index.html" class="btn-floating blue"><i class="material-icons">videogame_asset</i></a></li>
                 </ul>
             </div>
-          
+          <script>
+            function toggleFullScreen() {
+  if ((document.fullScreenElement && document.fullScreenElement !== null) ||    
+   (!document.mozFullScreen && !document.webkitIsFullScreen)) {
+    if (document.documentElement.requestFullScreen) {  
+      document.documentElement.requestFullScreen();  
+    } else if (document.documentElement.mozRequestFullScreen) {  
+      document.documentElement.mozRequestFullScreen();  
+    } else if (document.documentElement.webkitRequestFullScreen) {  
+      document.documentElement.webkitRequestFullScreen(Element.ALLOW_KEYBOARD_INPUT);  
+    }  
+  } else {  
+    if (document.cancelFullScreen) {  
+      document.cancelFullScreen();  
+    } else if (document.mozCancelFullScreen) {  
+      document.mozCancelFullScreen();  
+    } else if (document.webkitCancelFullScreen) {  
+      document.webkitCancelFullScreen();  
+    }  
+  }  
+}
+          </script>
         </body>
 </html>
 
