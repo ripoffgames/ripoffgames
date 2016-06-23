@@ -77,44 +77,11 @@
     <div class="modal-content">
       <h4>Contact</h4>
       <p>Contact the developers, and ask questions.</p>
-      <div class="row">
-				  <form class="col s12">
-					<div class="row">
-
-					  <div class="input-field col s6">
-							<i class="material-icons prefix">account_circle</i>
-						<input id="name"  data-error="Your name isn't that long!" type="text" class="validate" length="14">
-						<label for="name">Name</label>
-					  </div>
-
-					<div class="input-field col s6">
-						<i class="material-icons prefix">subject</i>
-							<input id="subject" data-error="Your subject is too long!" type="text" class="validate" length="32" value="RipOff Games Contact">
-						<label for="subject">Subject</label>
-					</div>
-
-					<div class="row">
-						<div class="input-field col s12">
-								<i class="material-icons prefix">email</i>
-							  <input id="email" type="email" class="validate">
-							  <label for="email" data-error="That's not an email!">Email</label>
-						</div>
-					</div>
-
-					<div class="row">
-						<div class="input-field col s12">
-							 <i class="material-icons prefix">message</i>
-							  <textarea id="message" class="materialize-textarea" length="477" data-error="Your Messgage is too long."></textarea>
-								  <label for="message">Message</label>
-						</div>
-					</div>
-
-					</div>
-					   <button class="btn waves-effect waves-light" type="submit" name="action">Submit
-							<i class="material-icons right">send</i>
-					   </button>
-				</form>
-</div>
+      <div id="google_translate_element"></div><script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, autoDisplay: false}, 'google_translate_element');
+}
+</script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
     </div>
     <div class="modal-footer">
       <a href="#!" class="modal-action modal-close waves-effect waves-red btn-flat ">Close</a>
